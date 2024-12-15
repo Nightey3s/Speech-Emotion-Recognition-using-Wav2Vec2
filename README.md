@@ -40,7 +40,7 @@ The Interactive Emotional Dyadic Motion Capture (IEMOCAP) database is used for t
   ```
 
 ### Training Configuration
-- **Batch Size**: 128 (T4-15GB GPU) / 256 (A100-40GB GPU)
+- **Batch Size**: 128 (T4-15GB GPU) / 256 (A100-40GB GPU) / 16 (RTX 3090 Ti)
 - **Optimizer**: AdamW with weight decay
 - **Learning Rate**: 1e-4 with scheduling
 - **Loss Function**: Cross Entropy
@@ -59,7 +59,7 @@ Our model achieves significant improvements over the baseline:
 | Model Version | Test-UAR | GPU | Time Taken |
 |--------------|----------|-----|------------|
 | Baseline     | 54.53%   | T4  | < 1 hour   |
-| Our Model    | 69.02%   | T4  | ~45 mins   |
+| Our Model    | 69.02%   | RTX 3090 Ti  | ~45 mins   |
 
 ## Implementation Details
 
